@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header Area Start -->
+    <div class="main_header">
+        <div class="container">
+            <div class="short_header">
+                <ol>
+                    <li>&nbsp;</li>
+                </ol>
+                <ul>
+                    <li class="for_order">
+                        <select name="short_header_sec">
+                            <option class="extra_dollar">USD, $</option>
+                            <option>EUR, €</option>
+                            <option>CNY, ¥</option>
+                            <option>GPB, £</option>
+                            <option>PKR, Rs</option>
+                            <option>INR, ₹</option>
+                        </select>
+                    </li>
+                    <li><a href=""><i class="fa fa-user" aria-hidden="true"></i>My account</a></li>
+                    <li><a href=""><i class="fa-solid fa-heart"></i>Wishlist</a></li>
+                    <li><a href=""><i class="fas fa-shopping-cart"></i>My Cart </a></li>
+                    <li><a href=""><i class="fa-solid fa-check"></i>Chekout</a></li>
+                    <li class="extra_li"><a href=""><i class="fa-solid fa-lock"></i>Login</a></li>
+                </ul>
+            </div>
+            <div class="header_second__stage">
+                <div class="logo">
+                    <img src="img/Flipkart-Logo.png" alt="">
+                </div>
+                <div class="search_div">
+                    <select name="for_cetagory">
+                        <option>Product Cetagory</option>
+                        <option>Clothing</option>
+                        <option>Hoodies</option>
+                        <option>Posters</option>
+                        <option>T-Shirts</option>
+                        <option>Album</option>
+                        <option>Hot Products</option>
+                        <option>Uncategories</option>
+                    </select>
+                    <input type="search" placeholder="Search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="price_div">
+                    <ul class="price_ul">
+                        <li class="first_pric__content"><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                        <li class="second_pric__content"><a href="">0</a></li>
+                        <li class="third_pric__content"><a href="">0.00€</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main__nav__container">
+        <div class="container">
+            <div class="main_navbar">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="main_nav_ul">
+                    <li><a href="">HOME</a></li>
+                    <li id="clothing_nav__boss">
+                        <a onclick="clothFunction('x')">CLOTHING<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul class="clothing_nav"  id="cloth_hide__show">
+                            <div class="men">
+                                <li><h3>Men</h3></li>
+                                <li>Dresses</li>
+                                <li>Shoes</li>
+                                <li>Jackets</li>
+                                <li>Sunglasses</li>
+                                <li>Sport Wear</li>
+                                <li>Blazers</li>
+                                <li>Shirts</li>
+                            </div>
+                            <div class="women">
+                                <li><h3>Women</h3></li>
+                                <li>Handbags</li>
+                                <li>Jwellery</li>
+                                <li>Swimwear</li>
+                                <li>Tops</li>
+                                <li>Flats</li>
+                                <li>Shoes</li>
+                                <li>Winter Wear</li>
+                            </div>
+                            <div class="boys">
+                                <li><h3>Boys</h3></li>
+                                <li>Toys & Games</li>
+                                <li>Jeans</li>
+                                <li>Shirts</li>
+                                <li>Shoes</li>
+                                <li>School Bags</li>
+                                <li>Lunch Box</li>
+                                <li>Footwear</li>
+                            </div>
+                            <div class="girls">
+                                <li><h3>Girls</h3></li>
+                                <li>Sandals</li>
+                                <li>Shorts</li>
+                                <li>Dresses</li>
+                                <li>Jwellery</li>
+                                <li>Bags</li>
+                                <li>Night Dress</li>
+                                <li>Swim Wear</li>
+                            </div>
+                            <div class="cloth_img">
+                                <img src="img/pose.jpg" alt="">
+                            </div>
+                        </ul>
+                    </li>
+                    <li id="electronics_nav__boss">
+                        <a onclick="electronicFunction('x')">ELECTRONICS<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul class="electronics_nav" id="electronics_hide__show">
+                            <div class="laptop">
+                                <li><h3>Laptops</h3></li>
+                                <li>Laptop Skins</li>
+                                <li>Apple</li>
+                                <li>Dell</li>
+                                <li>Lenovo</li>
+                                <li>Microsoft</li>
+                                <li>Asus</li>
+                                <li>Adapters</li>
+                                <li>Batteries</li>
+                                <li>Cooling Pads</li>
+                            </div>
+                            <div class="desktops">
+                                <li><h3>Desktops</h3></li>
+                                <li>Routers & Modems</li>
+                                <li>CPUs, Processors</li>
+                                <li>Graphics Cards</li>
+                                <li>Components</li>
+                                <li>Webcam</li>
+                                <li>Memory (RAM)</li>
+                                <li>Motherboards</li>
+                                <li>Keyboards</li>
+                                <li>Headphones</li>
+                            </div>
+                            <div class="cameras">
+                                <li><h3>Cameras</h3></li>
+                                <li>Accessories</li>
+                                <li>Binoculars</li>
+                                <li>Telescopes</li>
+                                <li>Camcorders</li>
+                                <li>Digital</li>
+                                <li>Flashes</li>
+                                <li>Lenses</li>
+                                <li>Surveillance</li>
+                                <li>Tripods</li>
+                            </div>
+                            <div class="mobile">
+                                <li><h3>Mobile Phones</h3></li>
+                                <li>Apple</li>
+                                <li>Samsung</li>
+                                <li>Lenovo</li>
+                                <li>Motorola</li>
+                                <li>LeEco</li>
+                                <li>Asus</li>
+                                <li>Acer</li>
+                                <li>Accessories</li>
+                                <li>Memory Cards</li>
+                            </div>
+                            <div class="electro_img">
+                                <img src="img/electro.jpg" alt="">
+                            </div>
+                        </ul>
+                    </li>
+                    <li id="elements_nav__boss">
+                        <a onclick="elementsFunction('x')">ELEMENTS<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul class="elements_nav" id="elements_hide__show">
+                            <li><a href="">Accordion</a></li>
+                            <li><a href="">Alerts</a></li>
+                            <li><a href="">Boxes</a></li>
+                            <li><a href="">Button</a></li>
+                            <li><a href="">Icon Box Colored</a></li>
+                            <li><a href="">Icon Box Vertical</a></li>
+                            <li><a href="">Icon Box Horizontal</a></li>
+                            <li><a href="">Pricing Tables</a></li>
+                            <li class="last_after"><a href="">Tabs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">WATCHES</a></li>
+                    <li><a href="">JAWELLERY</a></li>
+                    <li><a href="">SHOP</a></li>
+                    <li><a href="">KIDS & GIRLS</a></li>
+                    <li id="page_nav__boss">
+                        <a onclick="pagesFunction('x')">PAGES<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul class="page_nav" id="pages_hide__show">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">Product Detail</a></li>
+                            <li><a href="">Variation Product</a></li>
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">Checkout</a></li>
+                            <li><a href="">My account</a></li>
+                            <li><a href="">Wishlist</a></li>
+                            <li><a href="">Terms and Condition</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Blog Detail</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Faq</a></li>
+                            <li class="last_after"><a href="">404</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="special_nav">
+                    <li><a href="">TODAY OFFER</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Header Area Stop -->
+    <!-- Slider Area Start -->
+    <div class="slider_area">
+        <div class="container">
+            <div class="slider_content__container">
+                <div class="slider_content__left">
+                    <ul class="cetagory_ul">
+                        <li class="master_li__cetagory"><h3><i class="fas fa-bars"></i>CATEGORIES</h3></li>
+                        <li class="cetagory_colthing_li" onclick="clothcatFunction('x')">
+                            <i class="fa fa-shopping-bag"></i>
+                            <a>Clothing</a>
+                            <span>></span>
+                            <div class="clothing_cetagoris" id="clothcat_hide__show">
+                                <ul class="men_colth_cat">
+                                    <li class="cetagory_cat__heading"><h4>Men's</h4></li>
+                                    <li><a href="">Dresses</a></li>
+                                    <li><a href="">Shoes</a></li>
+                                    <li><a href="">Jackets</a></li>
+                                    <li><a href="">Sunglasses</a></li>
+                                    <li><a href="">Sport Wear</a></li>
+                                    <li><a href="">Blazers</a></li>
+                                </ul>
+                                <ul class="women_colth_cat">
+                                    <li class="cetagory_cat__heading"><h4>Women's</h4></li>
+                                    <li><a href="">Handbags</a></li>
+                                    <li><a href="">Jwellery</a></li>
+                                    <li><a href="">Swimwear</a></li>
+                                    <li><a href="">Tops</a></li>
+                                    <li><a href="">Flats</a></li>
+                                    <li><a href="">Shoes</a></li>
+                                </ul>
+                                <ul class="kids_colth_cat">
+                                    <li class="cetagory_cat__heading"><h4>Kid's</h4></li>
+                                    <li><a href="">Toys & Games</a></li>
+                                    <li><a href="">Jeans</a></li>
+                                    <li><a href="">Shirts</a></li>
+                                    <li><a href="">Shoes</a></li>
+                                    <li><a href="">School Bags</a></li>
+                                    <li><a href="">Lunch Box</a></li>
+                                </ul>
+                                <ul class="special_colth_cat">
+                                    <li class="cetagory_cat__heading"><h4>Special</h4></li>
+                                    <li><a href="">Shirts</a></li>
+                                    <li><a href="">Shorts</a></li>
+                                    <li><a href="">Wipes</a></li>
+                                    <li><a href="">Winter Wear</a></li>
+                                    <li><a href="">Footwear</a></li>
+                                    <li><a href="">Night Suits</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="cetagory_electornics_li" onclick="electrocatFunction('x')">
+                            <i class="fa fa-laptop"></i>
+                            <a>Electronics</a>
+                            <span>></span>
+                            <div class="electronic_cetagoris" id="electrocat_hide__show">
+                                <ul class="computer_electro_cat">
+                                    <li class="cetagory_cat__heading"><h4>Computers</h4></li>
+                                    <li><a href="">Laptop Skins</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Dell</a></li>
+                                    <li><a href="">Lenovo</a></li>
+                                    <li><a href="">Microsoft</a></li>
+                                </ul>
+                                <ul class="mobile_electro_cat">
+                                    <li class="cetagory_cat__heading"><h4>Mobiles</h4></li>
+                                    <li><a href="">Routers & Modems</a></li>
+                                    <li><a href="">CPUs, Processors</a></li>
+                                    <li><a href="">Graphics Cards</a></li>
+                                    <li><a href="">Components</a></li>
+                                    <li><a href="">Webcam</a></li>
+                                </ul>
+                                <ul class="electro_img_cat">
+                                    <li>
+                                        <img src="img/electro.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><i class="fa fa-paw"></i><a href="">Shoes</a><span>></span></li>
+                        <li><i class="fa-solid fa-hourglass"></i><a href="">Watches</a><span>></span></li>
+                        <li><i class="fa-solid fa-gem"></i><a href="">Jewellery</a><span>></span></li>
+                        <li><i class="fa fa-heartbeat"></i><a href=""> Health and Beauty</a><span>></span></li>
+                        <li><i class="fa fa-paper-plane"></i><a href="">Kids and Babies</a><span>></span></li>
+                        <li><i class="fa fa-futbol"></i><a href="">Sports</a><span>></span></li>
+                        <li><i class="fa fa-leaf"></i><a href="">Home and Garden</a><span>></span></li>
+                    </ul>
+                </div>
+                <!-- Main Slider Start -->
+                <div class="slider_content__right">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade my_slide_one">
+                            <div class="my_slide_main">
+                                <div class="numbertext">
+                                    <span class="number_span">SPRING 2019</span>
+                                    <h1>MEN <span>FASHION</span></h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <div class="slide_shp_but">
+                                      <a href="">SHOP NOW</a>
+                                    </div>
+                                </div>
+                                <div class="slider_i">
+                                    <img src="img/img1.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mySlides fade my_slide_two">
+                            <div class="my_slide_main">
+                                <div class="numbertext">
+                                    <span class="number_span">SPRING 2019</span>
+                                    <h1>MEN <span>FASHION</span></h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <div class="slide_shp_but">
+                                      <a href="">SHOP NOW</a>
+                                    </div>
+                                </div>
+                                <div class="slider_i">
+                                    <img src="img/seocndimg.png">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div><br>
+                    <!-- The dots/circles -->
+                    <div class="dot_div" style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+                    <div class="our_offer">
+                        <div class="offer_content__container">
+                            <div class="main_offer">
+                                <i class="fa-solid fa-money-bill-1-wave"></i>
+                                <h3>money back</h3>
+                                <p>30 Days Money Back Guarantee</p>
+                            </div>
+                            <div class="main_offer">
+                                <i class="fa fa-truck"></i>
+                                <h3>free shipping</h3>
+                                <p>Shipping on orders over $99</p>
+                            </div>
+                            <div class="main_offer">
+                                <i class="fa-brands fa-sellsy"></i>
+                                <h3>Special Sale</h3>
+                                <p>Extra $5 off on all items</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider Area Stop -->
+
+    <script src="js/active.js"></script>
+</body>
+</html>

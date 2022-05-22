@@ -1,0 +1,234 @@
+/* Header Responsive */
+@media only screen and (max-width: 550px) {
+    .short_header ul li {
+        width: 33.33%;
+    }
+    .clothing_cetagoris ul, .electronic_cetagoris ul {
+        width: 100% !important;
+    } 
+    .prev, .next {
+        padding: 5px !important;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .container {
+        width: 90%;
+    }
+    .short_header ol {
+        width: 0%;
+    }
+    .short_header ul {
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .short_header ul li::after {
+        visibility: hidden;
+        width: 0;
+    }
+    .for_order {
+        order: 6;
+    }
+    .header_second__stage {
+        flex-direction: column;
+    }
+    .search_div, .price_div {
+        width: 100%;
+    }
+    .search_div {
+        margin-bottom: 20px;
+    }
+    .search_div select {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+    .search_div input {
+        width: 90%;
+        margin-left: 0;
+        border-radius: 0 0 0 5px;
+    }
+    .search_div button {
+        width: 9.9%;
+        border-radius: 0px 0px 5px 0px;
+    }
+    .main_navbar {
+        display: flex;
+        flex-flow: column;
+    }
+    .main_nav_ul, .special_nav {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+    .checkbtn {
+        display: block;
+    }  
+    .main_nav_ul li a {
+        display: block;
+        border-radius: 5px;
+    }
+    #check:checked ~ .main_nav_ul {
+        display: flex;
+    }
+    #check:checked ~ .special_nav {
+        display: flex;
+    }
+    #clothing_nav__boss:hover .clothing_nav, #electronics_nav__boss:hover .electronics_nav, #elements_nav__boss:hover .elements_nav,  #page_nav__boss:hover .page_nav {
+        visibility: hidden;
+    }
+    .clothing_nav, .electronics_nav {
+        width: 90%;
+        left: 5%;
+        margin-top: 1px;
+        flex-direction: column;
+        transition: 0s;
+    }
+    .men, .women, .boys, .girls, .laptop, .desktops, .cameras, .mobile {
+        width: unset;
+        margin-bottom: 20px;
+    }
+    .cloth_img, .electro_img {
+        width: 100%;
+    }
+    .page_nav, .elements_nav {
+        margin-top: 1px;
+        width: 100%;
+        transition: 0s;
+    }
+    .special_nav li a {
+        float: right;
+    }
+    .cetagory_colthing_li:hover .clothing_cetagoris {
+        visibility: hidden;
+    }
+    .cetagory_electornics_li:hover .electronic_cetagoris {
+        visibility: hidden;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .short_header ol {
+        width: 37%;
+    }
+    .short_header ul {
+        width: 63%;
+    }
+    .search_div select {
+        width: 32%;
+    }
+    .search_div input {
+        width: 58%;
+    }
+    .main_nav_ul li a {
+        font-size: 11.9px;
+        padding: 14px 7px;
+    }      
+}
+@media only screen and (min-width: 1260px) {
+    .short_header ol {
+        width: 50%;
+    }
+    .short_header ul {
+        width: 50%;
+    }
+    .search_div select {
+        width: 25%;
+    }
+    .search_div input {
+        width: 65%;
+    }
+    .main_nav_ul li a {
+        font-size: 16px;
+        padding: 11px 8px;
+    }    
+}
+/*Slider Responsive*/
+@media only screen and (max-width: 991px) {
+    .slider_content__container {
+        flex-direction: column-reverse;
+    }
+    .slider_content__right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main_offer {
+        padding: 0 10px;
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    .slider_content__left {
+        width: 100%;
+    }
+    .prev, .next {
+        padding: 12px;
+    } 
+    .my_slide_main {
+        flex-direction: column-reverse;
+    }
+    .slide_shp_but {
+        margin-bottom: 20px;
+    }
+    .numbertext {
+        margin: 0 10px;
+        position: relative;
+        text-align: center;
+    }
+    .number_span {
+        margin-top: 20px;
+    }
+    .numbertext h1 {
+        font-size: 37px;
+    }
+    .numbertext p {
+        font-size: 19px;
+    }
+    .offer_content__container {
+        flex-direction: column;
+    }
+    .slider_area  {
+        position: static;
+    }
+    .cetagory_ul li {
+        position: relative;
+    }
+    .clothing_cetagoris, .electronic_cetagoris {
+        width: 100%;
+        left: 0;
+        top: 50px !important;
+        flex-flow: wrap;
+    }
+    .clothing_cetagoris ul, .electronic_cetagoris ul {
+        width: 50%;
+        margin-bottom: 15px;
+    } 
+    .dot {
+        display: inline-block;
+    }
+    .our_offer {
+        margin-top: 0;
+    }
+    .dot_div {
+        margin-top: -19px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .cetagory_ul li {
+        font-size: 13px;
+    }
+    .numbertext h1 {
+        font-size: 37px;
+    }
+    .numbertext p {
+        font-size: 19px;
+    }
+}
+@media only screen and (min-width: 1260px) {
+    .cetagory_ul li {
+        font-size: 16px;
+    }
+    .numbertext h1 {
+        font-size: 42px;
+    }
+    .numbertext p {
+        font-size: 20px;
+    }
+}
